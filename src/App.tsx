@@ -1,26 +1,101 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import CharacterPool from "./organisms/CharacterPool";
+import styled from "styled-components";
+
+const dummy = [
+  {
+    image: "a",
+    name: "a",
+    count: [2, 3, 4, 5, 6, 7]
+  },
+  {
+    image: "b",
+    name: "b",
+    count: [1, 2, 4, 5, 7]
+  },
+  {
+    image: "b",
+    name: "b",
+    count: [1, 2, 4, 5, 7]
+  },
+  {
+    image: "b",
+    name: "b",
+    count: [1, 2, 4, 5, 7]
+  },
+  {
+    image: "b",
+    name: "b",
+    count: [1, 2, 4, 5, 7]
+  },
+  {
+    image: "b",
+    name: "b",
+    count: [1, 2, 4, 5, 7]
+  },
+  {
+    image: "b",
+    name: "b",
+    count: [1, 2, 4, 5, 7]
+  },
+  {
+    image: "b",
+    name: "b",
+    count: [1, 2, 4, 5, 7]
+  },
+  {
+    image: "b",
+    name: "b",
+    count: [1, 2, 4, 5, 7]
+  },
+  {
+    image: "b",
+    name: "b",
+    count: [1, 2, 4, 5, 7]
+  },
+  {
+    image: "b",
+    name: "b",
+    count: [1, 2, 4, 5, 7]
+  },
+  {
+    image: "b",
+    name: "b",
+    count: [1, 2, 4, 5, 7]
+  },
+  {
+    image: "b",
+    name: "b",
+    count: [1, 2, 4, 5, 7]
+  },
+  {
+    image: "b",
+    name: "b",
+    count: [1, 2, 4, 5, 7]
+  },
+  {
+    image: "b",
+    name: "b",
+    count: [1, 2, 4, 5, 7]
+  },
+  {
+    image: "b",
+    name: "b",
+    count: [1, 2, 4, 5, 7]
+  }
+];
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Wrapper>
+      <CharacterPool character={dummy} />
+    </Wrapper>
   );
-}
+};
 
 export default App;
+
+const Wrapper = styled.div`
+  display: flex;
+  height: 100vh;
+`;
